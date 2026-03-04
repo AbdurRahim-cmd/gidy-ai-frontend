@@ -26,7 +26,6 @@ useEffect(() => {
   dispatch(fetchProfile());
 }, [dispatch]);
 
-console.log("PROFILE VALUE:", profile);
 
 
   const [isEditing, setIsEditing] = useState(false);
@@ -34,7 +33,7 @@ console.log("PROFILE VALUE:", profile);
   const [modalConfig, setModalConfig] = useState({
   isOpen: false,
   section: null,
-  mode: "add", // or "edit"
+  mode: "add",
   index: null,
   initialData: null
 });

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://gidy-ai-backend.vercel.app";
 
 // Fetch Profile
 export const fetchProfile = createAsyncThunk(

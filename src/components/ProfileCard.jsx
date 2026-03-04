@@ -21,16 +21,20 @@ export default function ProfileCard({ profile, onEdit }) {
         <div className="grid md:grid-cols-[auto_1fr_auto] gap-8 items-start">
 
           {/* Avatar */}
-          <div className="relative">
-            <div className="w-28 h-28 rounded-full 
-              bg-gradient-to-tr from-indigo-500 to-purple-600 p-1">
-              <div className="w-full h-full rounded-full bg-gray-200"></div>
-            </div>
+         <div className="relative">
+  <div className="w-28 h-28 rounded-full 
+    bg-gradient-to-tr from-indigo-500 to-purple-600 p-1">
+    
+    <div className="w-full h-full rounded-full overflow-hidden">
+      <img
+        src="/profile.jpg"
+        alt="Profile"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-            <span className="absolute bottom-2 right-2 w-4 h-4 
-              bg-green-500 rounded-full border-2 border-white dark:border-gray-800">
-            </span>
-          </div>
+  </div>
+</div>
 
           {/* Text Section */}
           <div className="min-w-0">
